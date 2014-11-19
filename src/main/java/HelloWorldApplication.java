@@ -15,12 +15,13 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
 
     @Override
     public void initialize(Bootstrap<HelloWorldConfiguration> bootstrap) {
-        // nothing to do yet
+        System.out.println("inicializando");
     }
 
     @Override
     public void run(HelloWorldConfiguration configuration,
                     Environment environment) {
+        System.out.println("chegou no método run!");
         final HelloWorldResource resource = new HelloWorldResource(
                 configuration.getTemplate(),
                 configuration.getDefaultName()

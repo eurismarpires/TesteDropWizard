@@ -7,9 +7,9 @@ public class HelloWorldConfiguration extends Configuration {
     private String template;
 
     @NotEmpty
-    private String defaultName = "Stranger";
-
     @JsonProperty
+
+    private String defaultName = "Stranger";
     public String getTemplate() {
         return template;
     }
